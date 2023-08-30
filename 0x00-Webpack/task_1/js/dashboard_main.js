@@ -20,4 +20,4 @@ const updateCounter = () => {
 };
 
 const btn = $(':button');
-$(btn).on('click', _.debounce(updateCounter, 100));
+$(btn).on('click', _.debounce(updateCounter, 500));
