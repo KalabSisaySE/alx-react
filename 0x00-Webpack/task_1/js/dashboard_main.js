@@ -1,10 +1,10 @@
 import $ from 'jquery';
-import _debounce from 'lodash';
+import _ from 'lodash';
 
 $('body').append('<p>Holberton Dashboard</p>');
 $('body').append('<p>Dashboard data for the students</p>');
 $('body').append('<button>Click here to get started</button>');
-$('body').append($('<p>').attr('id', 'count'));
+$('body').append('<p id="count"></p>');
 $('body').append('<p>Copyright - Holberton School</p>');
 
 const updateCounter = () => {
@@ -20,4 +20,4 @@ const updateCounter = () => {
 };
 
 const btn = $(':button');
-$(btn).on('click', _debounce(updateCounter, 100));
+$(btn).on('click', _.debounce(updateCounter, 100));
