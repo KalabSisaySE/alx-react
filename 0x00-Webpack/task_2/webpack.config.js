@@ -9,8 +9,17 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-        type: 'asset/resource',
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true,
+              disable: true,
+            },
+          },
+        ],
       },
     ],
   },
