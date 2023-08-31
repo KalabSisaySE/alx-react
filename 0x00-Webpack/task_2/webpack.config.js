@@ -23,7 +23,10 @@ module.exports = {
       },
     ],
   },
-  performance: { maxAssetSize: 500000 },
+  performance: {
+    maxAssetSize: 1000000,
+    maxEntrypointSize: 1000000,
+  },
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
