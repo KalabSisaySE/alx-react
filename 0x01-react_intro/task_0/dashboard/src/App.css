@@ -1,0 +1,37 @@
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.App-footer {
+  border-top: 5px solid #e0354b;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.App-body {
+  padding: 2rem;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex;
+  font-size: calc(10px + 2vmin);
+  color: #e0354b;
+  border-bottom: 5px solid #e0354b;
+}
+
+.App-header img {
+  width: 200px;
+}
+
+h1 {
+  color: #e0354b;
+  font-size: 48px;
+}
